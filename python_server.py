@@ -47,7 +47,7 @@ def update_title(id):
 @app.route('/titles/<id>', methods=['DELETE'])
 def delete_titleId(id):
     mongo.db.titles.delete_one({'tconst': id})
-    return f"Deleted title with id: {id}"
+    return {'res': f"Deleted title with id: {id}"}
 
 
 if __name__ == '__main__':
