@@ -28,4 +28,4 @@ python3 python_server.py
 
 ## Note
 
-### Must create the mongoDB "movies" database and "titles" collection locally. Further instructions will be documented
+- Must create the mongoDB "movies" database and "titles" collection locally. Further instructions will be documented
