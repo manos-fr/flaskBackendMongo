@@ -5,99 +5,80 @@
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking 127.0.0.1 (be patient)
+#### Finished 73 requests
 
-- Finished 73 requests
-
-Server Software: Werkzeug/1.0.1
-Server Hostname: 127.0.0.1
-Server Port: 3000
-
-- Document Path: /titles
-- Document Length: 3112346 bytes
-
-- Concurrency Level: 10
-- Time taken for tests: 10.194 seconds
-- Complete requests: 73
+- Server Software: Werkzeug/1.0.1
+- Server Hostname: 127.0.0.1
+- Server Port: 3000
+- #### Document Length: 3112346 bytes
+- #### Concurrency Level: 10
+- #### Time taken for tests: 10.194 seconds
+- #### Complete requests: 73
 - Failed requests: 0
 - Total transferred: 227214617 bytes
 - HTML transferred: 227201258 bytes
-- Requests per second: 7.16 [#/sec] (mean)
+- #### Requests per second: 7.16 [#/sec] (mean)
 - Time per request: 1396.433 [ms] (mean)
 - Time per request: 139.643 [ms] (mean, across all concurrent requests)
 - Transfer rate: 21766.74 [Kbytes/sec] received
--
-- Connection Times (ms)
-- min mean[+/-sd] median max
-- Connect: 0 0 0.2 0 1
-- Processing: 225 1259 215.5 1300 2084
-- Waiting: 222 1201 223.5 1261 1980
-- Total: 225 1259 215.4 1300 2084
 
-Percentage of the requests served within a certain time (ms)
-50% 1299
-66% 1315
-75% 1328
-80% 1341
-90% 1406
-95% 1496
-98% 1886
-99% 2084
-100% 2084 (longest request)
+#### Percentage of the requests served within a certain time (ms)
 
-Document entries: 8471
+- 50% 1299
+- 66% 1315
+- 75% 1328
+- 80% 1341
+- 90% 1406
+- 95% 1496
+- 98% 1886
+- 99% 2084
+- 100% 2084 (longest request)
+
+##### Document entries: 8471
 
 ## POST
 
-This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
+### This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
+
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking 127.0.0.1 (be patient)
-Completed 5000 requests
-Completed 10000 requests
-Finished 12331 requests
+#### Finished 12331 requests
 
-Server Software: Werkzeug/1.0.1
-Server Hostname: 127.0.0.1
-Server Port: 3000
+- Server Software: Werkzeug/1.0.1
+- Server Hostname: 127.0.0.1
+- Server Port: 3000
+- #### Document Length: 109 bytes
+- #### Concurrency Level: 10
+- #### Time taken for tests: 10.000 seconds
+- #### Complete requests: 12331
+- Failed requests: 0
+- Total transferred: 3551328 bytes
+- Total body sent: 3134360
+- HTML transferred: 1344079 bytes
+- #### Requests per second: 1233.09 [#/sec] (mean)
+- Time per request: 8.110 [ms] (mean)
+- Time per request: 0.811 [ms] (mean, across all concurrent requests)
 
-Document Path: /titles
-Document Length: 109 bytes
+#### Transfer rate:
 
-Concurrency Level: 10
-Time taken for tests: 10.000 seconds
-Complete requests: 12331
-Failed requests: 0
-Total transferred: 3551328 bytes
-Total body sent: 3134360
-HTML transferred: 1344079 bytes
-Requests per second: 1233.09 [#/sec] (mean)
-Time per request: 8.110 [ms] (mean)
-Time per request: 0.811 [ms] (mean, across all concurrent requests)
-Transfer rate: 346.81 [Kbytes/sec] received
-306.09 kb/s sent
-652.90 kb/s total
+- 346.81 [Kbytes/sec] received
+- 306.09 kb/s sent
+- 652.90 kb/s total
 
-Connection Times (ms)
-min mean[+/-sd] median max
-Connect: 0 0 0.1 0 9
-Processing: 1 8 4.1 7 58
-Waiting: 1 7 4.1 6 57
-Total: 1 8 4.1 7 58
+#### Percentage of the requests served within a certain time (ms)
 
-Percentage of the requests served within a certain time (ms)
-50% 7
-66% 8
-75% 9
-80% 9
-90% 12
-95% 16
-98% 21
-99% 26
-100% 58 (longest request)
+- 50% 7
+- 66% 8
+- 75% 9
+- 80% 9
+- 90% 12
+- 95% 16
+- 98% 21
+- 99% 26
+- 100% 58 (longest request)
 
-Document entries: 8471 (initial)
+##### Document entries: 8471 (initial)
 
 ## PUT
 
@@ -106,48 +87,40 @@ Document entries: 8471 (initial)
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking 127.0.0.1 (be patient)
-Completed 5000 requests
-Completed 10000 requests
-Finished 10893 requests
+#### Finished 10893 requests
 
-Server Software: Werkzeug/1.0.1
-Server Hostname: 127.0.0.1
-Server Port: 3000
+- Server Software: Werkzeug/1.0.1
+- Server Hostname: 127.0.0.1
+- Server Port: 3000
+- Document Path: /titles/tt1297333
+- #### Document Length: 79 bytes
+- #### Concurrency Level: 10
+- #### Time taken for tests: 10.000 seconds
+- #### Complete requests: 10893
+- Failed requests: 0
+- Total transferred: 2799501 bytes
+- Total body sent: 2463626
+- HTML transferred: 860547 bytes
+- #### Requests per second: 1089.30 [#/sec] (mean)
+- Time per request: 9.180 [ms] (mean)
+- Time per request: 0.918 [ms] (mean, across all concurrent requests)
 
-Document Path: /titles/tt1297333
-Document Length: 79 bytes
+#### Transfer rate:
 
-Concurrency Level: 10
-Time taken for tests: 10.000 seconds
-Complete requests: 10893
-Failed requests: 0
-Total transferred: 2799501 bytes
-Total body sent: 2463626
-HTML transferred: 860547 bytes
-Requests per second: 1089.30 [#/sec] (mean)
-Time per request: 9.180 [ms] (mean)
-Time per request: 0.918 [ms] (mean, across all concurrent requests)
-Transfer rate: 273.39 [Kbytes/sec] received
-240.59 kb/s sent
-513.98 kb/s total
+- 273.39 [Kbytes/sec] received
+- 240.59 kb/s sent
+- 513.98 kb/s total
 
-Connection Times (ms)
-min mean[+/-sd] median max
-Connect: 0 0 0.1 0 2
-Processing: 3 9 6.5 7 64
-Waiting: 3 8 6.5 6 63
-Total: 3 9 6.5 7 64
+#### Percentage of the requests served within a certain time (ms)
 
-Percentage of the requests served within a certain time (ms)
-50% 7
-66% 8
-75% 8
-80% 9
-90% 18
-95% 25
-98% 31
-99% 35
-100% 64 (longest request)
+- 50% 7
+- 66% 8
+- 75% 8
+- 80% 9
+- 90% 18
+- 95% 25
+- 98% 31
+- 99% 35
+- 100% 64 (longest request)
 
-Document entries: 8471
+##### Document entries: 8471
