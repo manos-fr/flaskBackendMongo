@@ -10,14 +10,14 @@ Licensed to The Apache Software Foundation, http://www.apache.org/
 - Server Software: Werkzeug/1.0.1
 - Server Hostname: 127.0.0.1
 - Server Port: 3000
-- #### Document Length: 3112346 bytes
-- #### Concurrency Level: 10
-- #### Time taken for tests: 10.194 seconds
-- #### Complete requests: 73
+- **Document Length: 3112346 bytes**
+- **Concurrency Level: 10**
+- **Time taken for tests: 10.194 seconds**
+- **Complete requests: 73**
 - Failed requests: 0
 - Total transferred: 227214617 bytes
 - HTML transferred: 227201258 bytes
-- #### Requests per second: 7.16 [#/sec] (mean)
+- **Requests per second: 7.16 [#/sec] (mean)**
 - Time per request: 1396.433 [ms] (mean)
 - Time per request: 139.643 [ms] (mean, across all concurrent requests)
 - Transfer rate: 21766.74 [Kbytes/sec] received
@@ -48,15 +48,15 @@ Licensed to The Apache Software Foundation, http://www.apache.org/
 - Server Software: Werkzeug/1.0.1
 - Server Hostname: 127.0.0.1
 - Server Port: 3000
-- #### Document Length: 109 bytes
-- #### Concurrency Level: 10
-- #### Time taken for tests: 10.000 seconds
-- #### Complete requests: 12331
+- **Document Length: 109 bytes**
+- **Concurrency Level: 10**
+- **Time taken for tests: 10.000 seconds**
+- **Complete requests: 12331**
 - Failed requests: 0
 - Total transferred: 3551328 bytes
 - Total body sent: 3134360
 - HTML transferred: 1344079 bytes
-- #### Requests per second: 1233.09 [#/sec] (mean)
+- **Requests per second: 1233.09 [#/sec] (mean)**
 - Time per request: 8.110 [ms] (mean)
 - Time per request: 0.811 [ms] (mean, across all concurrent requests)
 
@@ -93,15 +93,15 @@ Licensed to The Apache Software Foundation, http://www.apache.org/
 - Server Hostname: 127.0.0.1
 - Server Port: 3000
 - Document Path: /titles/tt1297333
-- #### Document Length: 79 bytes
-- #### Concurrency Level: 10
-- #### Time taken for tests: 10.000 seconds
-- #### Complete requests: 10893
+- **Document Length: 79 bytes**
+- **Concurrency Level: 10**
+- **Time taken for tests: 10.000 seconds**
+- **Complete requests: 10893**
 - Failed requests: 0
 - Total transferred: 2799501 bytes
 - Total body sent: 2463626
 - HTML transferred: 860547 bytes
-- #### Requests per second: 1089.30 [#/sec] (mean)
+- **Requests per second: 1089.30 [#/sec] (mean)**
 - Time per request: 9.180 [ms] (mean)
 - Time per request: 0.918 [ms] (mean, across all concurrent requests)
 
