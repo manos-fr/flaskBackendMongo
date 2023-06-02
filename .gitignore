@@ -1,4 +1,4 @@
-/venv
-.venv
-./venv
+/mongovenv
+.mongovenv
+./mongovenv
 .vscode

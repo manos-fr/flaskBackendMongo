@@ -1,5 +1,5 @@
 from bson import json_util
-from flask import Flask, jsonify, request
+from flask import Flask, request
 from flask_restful import Api
 from flask_cors import CORS
 from flask_pymongo import PyMongo
@@ -14,11 +14,15 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/movies"
 mongo = PyMongo(app)
 
 
-@app.route('/titles')
+@app.route('/titles', methods=['GET'])
 def get_titles():
-    titles = [titles for titles in mongo.db.titles.find()]
-    titlesStr = json.dumps(titles, default=json_util.default)
-    return {'rows': json.loads(titlesStr)}
+    try:
+        titles = [titles for titles in mongo.db.titles.find()]
+        titlesStr = json.dumps(titles, default=json_util.default)
+        return {'rows': json.loads(titlesStr)}
+    except:
+        return {'error'}
+
 
 
 @app.route('/titles/<id>', methods=['GET'])
