@@ -29,49 +29,16 @@ Percentage of the requests served within a certain time (ms)
   99%   1286
  100%   1382 (longest request)
 
- ### PUT
+### POST
 Concurrency Level:      10
-Time taken for tests:   10.002 seconds
-Complete requests:      9114
-Failed requests:        0
-Total transferred:      2333952 bytes
-Total body sent:        2088938
-HTML transferred:       720243 bytes
-Requests per second:    911.23 [#/sec] (mean)
-Time per request:       10.974 [ms] (mean)
-Time per request:       1.097 [ms] (mean, across all concurrent requests)
-Transfer rate:          227.88 [Kbytes/sec] received
-                        203.96 kb/s sent
-                        431.84 kb/s total
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        0    0   1.4      0      66
-Processing:     3   11   9.2      8     100
-Waiting:        2   10   9.0      7      99
-Total:          3   11   9.3      8     100
-
-Percentage of the requests served within a certain time (ms)
-  50%      8
-  66%      9
-  75%     10
-  80%     11
-  90%     20
-  95%     30
-  98%     39
-  99%     54
- 100%    100 (longest request)
-
- ### POST
- Concurrency Level:      10
 Time taken for tests:   10.000 seconds
-Complete requests:      9561
+- Complete requests:      9561
 Failed requests:        0
 Total transferred:      2744185 bytes
 Total body sent:        2431034
 HTML transferred:       1042149 bytes
-Requests per second:    956.09 [#/sec] (mean)
-Time per request:       10.459 [ms] (mean)
+- Requests per second:    956.09 [#/sec] (mean)
+- Time per request:       10.459 [ms] (mean)
 Time per request:       1.046 [ms] (mean, across all concurrent requests)
 Transfer rate:          267.98 [Kbytes/sec] received
                         237.40 kb/s sent
@@ -94,3 +61,36 @@ Percentage of the requests served within a certain time (ms)
   98%     37
   99%     45
  100%    110 (longest request)
+
+ ### PUT
+Concurrency Level:      10
+Time taken for tests:   10.002 seconds
+- Complete requests:      9114
+Failed requests:        0
+Total transferred:      2333952 bytes
+Total body sent:        2088938
+HTML transferred:       720243 bytes
+- Requests per second:    911.23 [#/sec] (mean)
+- Time per request:       10.974 [ms] (mean)
+Time per request:       1.097 [ms] (mean, across all concurrent requests)
+Transfer rate:          227.88 [Kbytes/sec] received
+                        203.96 kb/s sent
+                        431.84 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.4      0      66
+Processing:     3   11   9.2      8     100
+Waiting:        2   10   9.0      7      99
+Total:          3   11   9.3      8     100
+
+Percentage of the requests served within a certain time (ms)
+  50%      8
+  66%      9
+  75%     10
+  80%     11
+  90%     20
+  95%     30
+  98%     39
+  99%     54
+ 100%    100 (longest request)

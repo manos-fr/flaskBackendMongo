@@ -4,6 +4,8 @@ from flask_restful import Api
 from flask_cors import CORS
 from flask_pymongo import PyMongo
 import json
+from timeit import default_timer as timer
+
 
 app = Flask(__name__)
 api = Api(app)
@@ -34,19 +36,29 @@ def get_titleById(id):
 
 @app.route('/titles', methods=['POST'])
 def create_title():
-    body: dict = request.get_json()
+    body = getJson(request)
     mongo.db.titles.insert_one(
         {'tconst': f"{body.get('tconst')}", 'originalTitle': f"{body.get('originalTitle')}", 'startYear': f"{body.get('startYear')}", 'genres': f"{body.get('genres')}"})
     return {'tconst': f"{body.get('tconst')}", 'originaTitle': f"{body.get('originalTitle')}", 'startYear': f"{body.get('startYear')}", 'genres': f"{body.get('genres')}"}
 
-
 @app.route('/titles/<id>', methods=['PUT'])
 def update_title(id):
-    body: dict = request.get_json()
-    mongo.db.titles.update_one(
-        {'tconst': id}, {"$set": {'genres': body.get('genres'), 'startYear': body.get('startYear'), 'originalTitle': body.get('originalTitle')}}, upsert=True)
+    start = timer()
+    body = getJson(request)
+    startDb = timer()
+    dbHandlingPut(id, body)
+    endDb = timer()
+    f = open("./results.txt", "a")
+    f.write(f"db: {(endDb - startDb)*1000} totRequest: {(endDb-start)*1000}\n")
     return {'genres': body.get('genres'), 'startYear': body.get('startYear'), 'originalTitle': body.get('originalTitle')}
 
+def dbHandlingPut(id, body):
+    mongo.db.titles.update_one(
+        {'tconst': id}, {"$set": {'genres': body.get('genres'), 'startYear': body.get('startYear'), 'originalTitle': body.get('originalTitle')}}, upsert=True)        
+
+def getJson(request):
+    body: dict = request.get_json()
+    return body
 
 @app.route('/titles/<id>', methods=['DELETE'])
 def delete_titleId(id):
