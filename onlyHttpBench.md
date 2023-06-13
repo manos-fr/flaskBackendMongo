@@ -1,10 +1,10 @@
 Time taken for tests:   16.405 seconds
-Complete requests:      16305
+- Complete requests:      16305
 Failed requests:        0
 Total transferred:      3636015 bytes
 HTML transferred:       750030 bytes
-Requests per second:    993.90 [#/sec] (mean)
-Time per request:       10.061 [ms] (mean)
+- Requests per second:    993.90 [#/sec] (mean)
+- Time per request:       10.061 [ms] (mean)
 Time per request:       1.006 [ms] (mean, across all concurrent requests)
 Transfer rate:          216.44 [Kbytes/sec] received
 
